@@ -1,0 +1,469 @@
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>dashboard</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+
+
+
+
+.bar{
+  width: 100%;
+  height: 20px;
+}
+
+*{
+  margin: 0px;
+  padding: 0;
+  
+}
+
+body{
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat fixed;
+        background-size: cover;
+        font-family: 'Prompt', sans-serif;
+        
+
+        /*background-image: linear-gradient(to right, black,#FF5733,black,#FF5733 ,black);*/
+      }
+
+ .container{
+  background: rgb(0,0,0 ,0.8) ;border: solid 1px #fff; border-radius: 5px; width: 70%;margin: -10px auto;margin-top: 100px;
+ }
+
+h1{
+  color:#FF7900;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+img{
+  
+  height: 50px;
+  width: 50px;
+}
+.list-group{
+  margin-top: 15px;
+
+}
+section.col-lg-3{
+  
+}
+.card{
+margin: 50px;
+  /*width: 40px;
+  */
+
+  margin-right: 0px;
+  display: inline-block;
+  justify-content: center;
+}
+.card-header{
+  background-color: white;
+  color: rgb(0,0,0,0.9);;
+}
+
+a{
+  text-decoration: none;
+}
+
+div.card-header{
+  /*background: rgb(0,0,0,0.9);*/
+  background: white;
+}
+
+
+
+a:active{
+  background: ;
+
+}
+div .tab{
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+
+section div .list-group-item.active {
+background-color:#FF7900 ;
+border-color: white;
+
+
+ }
+
+section div .list-group-item {
+background:#A9A9A9 ;
+border-color: white; 
+width: 100%;
+
+
+}
+
+
+
+
+section div .list-group-item{
+  text-decoration: none;
+  background: black;
+  color: white;
+  font-size:15px;
+  text-transform: uppercase;
+}
+section div .list-group-item: hover{
+  background: green;
+}
+
+.starter-template{
+  background: black;
+  margin-top: 40px;
+}
+
+a.btn-default{
+  font-size: 14px;
+  background: white;
+}
+.devider{
+  width: 20%;
+  height: 1px;
+  margin: 0 auto;
+  background-color:orangered;
+
+}
+
+
+nav ol li a {
+  color: black;
+  background: #A9A9A9;
+}
+nav .breadcrumb{
+  background:#A9A9A9; 
+}
+nav .navbar{
+  background:#FF7900; 
+}
+nav ol li a.active{
+  background:#FF7900 ; 
+}
+nav .navbar{
+  background: red;
+}
+
+
+    </style>
+  
+  </head>
+  <body>
+    <nav  class="navbar navbar-expand-md navbar-dark bg-dark ">
+      <a class="navbar-brand" href="#"> <img src="oda.png"> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+  <div class="collapse navbar-collapse" id="nmyavbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#" tabindex="-1">active</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#1" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">connecté</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="1">Action</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div role="main" class="container">
+
+  <img src="orange_logo.svg" style="height:  90px;width: 90px;margin-top: 30px;">
+  <img src="orange_logo.svg" style="height:  90px;width: 90px; float:right;margin-top: 30px;">
+<div class="devider"></div>
+
+  <div class="starter-template">
+
+    <h1><i class="fa fa-cog"style="font-size:35px;color:#FF7900;position: absolute;z-index: -5;"></i> Administrateur</h1>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item " aria-current="page"><a href="#">Acuueil</a> </li>
+        <li class="breadcrumb-item " aria-current="page"><a href="#">Statistiques</a> </li>
+        <li class="breadcrumb-item " aria-current="page"><a href="#">Vigils presents</a> </li>
+        
+    </nav>
+
+    
+    
+ 
+  </div>
+
+</div><!-- /.container -->
+<div class="container">
+  <div class="row base">
+
+    <section class="col-lg-3">
+
+      <!-- MENU A GAUCHE-->
+
+        <div class="tab">
+          <button class="tablinks list-group-item active" onclick="openCity(event, 'historique')">Historique E/S</button>
+          <button class="tablinks list-group-item" onclick="openCity(event, 'entrer')">Entrées</button>
+          <button class="tablinks list-group-item" onclick="openCity(event, 'sortir')">Sortir</button>
+        </div>
+
+
+
+
+        <div class="tab">
+          <button class="tablinks list-group-item " onclick="openCity(event, 'espace_academicien')">Gestion Academiciens</button>
+          <a class="tablinks list-group-item" style="text-align: center;" href="generateqr/qrjs.html">ajouter Academicien</a>
+          <button class="tablinks list-group-item" onclick="openCity(event, 'fiche')">fiche</button>
+        </div>
+
+
+        
+
+        <div class="tab">
+          <button class="tablinks list-group-item" onclick="openCity(event, 'admin')">Espace admin</button>
+          <button class="tablinks list-group-item" onclick="openCity(event, 'compte')">compte</button>
+          <a class="tablinks list-group-item text-align" style="text-align: center;" href="admin.html">ajouter admin</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+      
+    </section>
+
+    <section class="col-md-9">
+      <div class="row">
+                <div class="card col-sm-3  col-md-3  " style="background: #FF7900;">
+                  
+                  <div class="card-header">
+                    <h5 class="card-title">Visiteurs</h5>
+                    <h2><i class="fa fa-home"></i> <span>36</span></h2>
+                    
+                  </div>
+                  <div class="card-body">
+                    
+                    
+                    <a href="#" class="btn btn-default" style="font-weight: bold;color: black"> <i class="fa fa-eye" style="font-size:35px;color:black;display: inline; margin: 0 auto;"></i><span class="glyphicon glyphicon-name"></span> voir</a>
+                  </div>
+              </div>
+
+              <div class="card col-sm-3  col-md-3  " style=" background:#A9A9A9;">
+                  
+                  <div class="card-header">
+                    <h5 class="card-title">Historique</h5>
+                    <h2><i class="fa fa-user"> </i>  40</h2>
+                    
+                  </div>
+                  <div class="card-body">
+                    
+                    
+                    <a href="#" class="btn btn-default"><i class="fa fa-eye" style="font-size:35px;color:black"></i>Voir</a>
+                  </div>
+              </div>
+
+              <div class="card col-sm-3  col-md-3  " style="background: #FF7900;">
+                  
+                  <div class="card-header">
+                    <h5 class="card-title">Evolution</h5>
+                    <h2><i class="fa fa-bar-chart"></i></h2>
+                    
+                  </div>
+                  <div class="card-body">
+                    
+                    
+                    <a href="#" class="btn btn-default"><i class="fa fa-eye" style="font-size:35px;color:black"></i>Voir</a>
+                  </div>
+              </div>
+        </div>
+
+
+                
+
+
+
+                <div id="historique" class="tabcontent">
+                  
+                  <table class="table table-striped table-dark">
+                      <thead>
+                        <tr>
+                          <th scope="col" style="color: white; text-align: center;margin:0 auto;">Liste des visiteurs</th>
+                          
+                        </tr>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr >
+                          <th >Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                  </table>
+
+                  <div id="espace_academicien" class="tabcontent">
+                  <h3>London</h3>
+                  <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="ajouter" class="tabcontent">
+                  <h3>Paris</h3>
+                  <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="fiche" class="tabcontent">
+                  <h3>Tokyo</h3>
+                  <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+
+
+
+
+                </div>
+
+                <div id="entrer" class="tabcontent">
+                  <h3>Paris</h3>
+                  <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="sortir" class="tabcontent">
+                  <h3>Tokyo</h3>
+                  <p>Tokyo is the capital of Japan.</p>
+                </div>
+
+
+
+                <div id="admin" class="tabcontent">
+                  <h3>London</h3>
+                  <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="compte" class="tabcontent">
+                  <h3>Paris</h3>
+                  <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="ajout" class="tabcontent">
+                  <h3>Tokyo</h3>
+                  <p>Tokyo is the capital of Japan.</p>
+                </div>
+      
+      
+  </section>
+
+
+
+
+
+  </div>
+</div>
+
+  </div>
+  
+
+
+
+
+
+
+<!--
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+      <script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+-->
+      </body>
+</html>

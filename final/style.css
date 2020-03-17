@@ -1,0 +1,144 @@
+
+
+
+
+.bar{
+	width: 100%;
+	height: 20px;
+}
+
+*{
+	margin: 0px;
+	padding: 0;
+	
+}
+
+body{
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") no-repeat fixed;
+        background-size: cover;
+        font-family: 'Prompt', sans-serif;
+        
+
+        /*background-image: linear-gradient(to right, black,#FF5733,black,#FF5733 ,black);*/
+      }
+
+ .container{
+ 	background: rgb(0,0,0 ,0.8) ;border: solid 1px #fff; border-radius: 5px; width: 70%;margin: -10px auto;margin-top: 100px;
+ }
+
+h1{
+	color:#FF7900;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+img{
+	
+	height: 50px;
+	width: 50px;
+}
+.list-group{
+	margin-top: 15px;
+
+}
+section.col-lg-3{
+	
+}
+.card{
+margin: 50px;
+	/*width: 40px;
+	*/
+
+	margin-right: 0px;
+	display: inline-block;
+	justify-content: center;
+}
+.card-header{
+	background-color: white;
+	color: rgb(0,0,0,0.9);;
+}
+
+a{
+	text-decoration: none;
+}
+
+div.card-header{
+	/*background: rgb(0,0,0,0.9);*/
+	background: white;
+}
+
+
+
+a:active{
+	background: ;
+
+}
+div .tab{
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+
+section div .list-group-item.active {
+background-color:#FF7900 ;
+border-color: white;
+
+
+ }
+
+section div .list-group-item {
+background:#A9A9A9 ;
+border-color: white; 
+width: 100%;
+
+
+}
+
+
+
+
+section div .list-group-item{
+	text-decoration: none;
+	background: black;
+	color: white;
+	font-size:15px;
+	text-transform: uppercase;
+}
+section div .list-group-item: hover{
+	background: green;
+}
+
+.starter-template{
+	background: black;
+	margin-top: 40px;
+}
+
+a.btn-default{
+	font-size: 14px;
+	background: white;
+}
+.devider{
+  width: 20%;
+  height: 1px;
+  margin: 0 auto;
+  background-color:orangered;
+
+}
+
+
+nav ol li a {
+	color: black;
+	background: #A9A9A9;
+}
+nav .breadcrumb{
+	background:#A9A9A9; 
+}
+nav .navbar{
+	background:#FF7900; 
+}
+nav ol li a.active{
+	background:#FF7900 ; 
+}
+nav .navbar{
+	background: red;
+}
